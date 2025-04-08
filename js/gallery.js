@@ -13,7 +13,7 @@ const galleryData = [
         caption: 'Kuch Yadein'
     },
     {
-        image: 'assets/gallery/Beach.jpg',
+        image: 'assets/gallery/Sunrise.jpeg',
         caption: 'Ur_first_Sunrise'
     },
     {
