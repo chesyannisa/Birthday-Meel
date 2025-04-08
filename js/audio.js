@@ -10,10 +10,28 @@ document.addEventListener('DOMContentLoaded', function() {
             bgMusic.pause();
             musicBtn.innerHTML = '<i class="fas fa-volume-mute"></i>';
         } else {
-            bgMusic.play();
+            playMusic();
             musicBtn.innerHTML = '<i class="fas fa-music"></i>';
         }
         isPlaying = !isPlaying;
+    }
+
+    // Function to play music with proper error handling
+    function playMusic() {
+        const playPromise = bgMusic.play();
+        
+        if (playPromise !== undefined) {
+            playPromise.then(() => {
+                // Playback started successfully
+                isPlaying = true;
+                musicBtn.innerHTML = '<i class="fas fa-music"></i>';
+            }).catch(error => {
+                // Auto-play was prevented
+                console.log("Audio autoplay failed:", error);
+                isPlaying = false;
+                musicBtn.innerHTML = '<i class="fas fa-volume-mute"></i>';
+            });
+        }
     }
 
     // Toggle music on button click
@@ -29,14 +47,23 @@ document.addEventListener('DOMContentLoaded', function() {
     // Resume music when video is paused
     video.addEventListener('pause', function() {
         if (isPlaying) {
-            bgMusic.play();
+            playMusic();
         }
     });
 
-    // Handle autoplay restrictions
-    bgMusic.play().catch(function(error) {
-        console.log("Audio autoplay failed:", error);
-        isPlaying = false;
-        musicBtn.innerHTML = '<i class="fas fa-volume-mute"></i>';
+    // Try to play music immediately when page loads
+    playMusic();
+    
+    // Add event listener for page visibility changes
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            // Page is hidden, pause music
+            bgMusic.pause();
+        } else {
+            // Page is visible again, resume music if it was playing
+            if (isPlaying) {
+                playMusic();
+            }
+        }
     });
 }); 
