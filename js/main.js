@@ -110,8 +110,8 @@ function getRandomColor() {
 setInterval(createBalloon, 1000);
 
 // Initial balloons
-for (let i = 0; i < 5; i++) {
-    setTimeout(createBalloon, i * 100);
+for (let i = 0; i < 10; i++) {
+    setTimeout(createBalloon, i * 300);
 }
 
 // Video Modal Functionality
