@@ -1,13 +1,13 @@
 /* Global Styles */
 :root {
-    --primary-color: #ff69b4;
-    --secondary-color: #4a90e2;
+    --primary-color: #F7A8C4;
+    --secondary-color: #B03052;
     --accent-color: #ffd700;
     --text-color: #333;
     --light-color: #fff;
     --background-color: #f9f9f9;
     --transition: all 0.3s ease;
-    --gradient-1: linear-gradient(45deg, #ff69b4, #4a90e2);
+    --gradient-1: linear-gradient(45deg, #F7A8C4, #B03052);
     --gradient-2: linear-gradient(135deg, #ffd700, #ff69b4);
 }
 

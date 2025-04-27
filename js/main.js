@@ -90,7 +90,7 @@ function createBalloon() {
     balloon.style.height = `${size * 1.2}px`;
     
     // Random animation duration
-    balloon.style.animationDuration = (Math.random() * 10 + 10) + 's';
+    balloon.style.animationDuration = (Math.random() * 5 + 5) + 's';
     
     document.querySelector('.floating-balloons').appendChild(balloon);
 
@@ -110,8 +110,8 @@ function getRandomColor() {
 setInterval(createBalloon, 1000);
 
 // Initial balloons
-for (let i = 0; i < 10; i++) {
-    setTimeout(createBalloon, i * 300);
+for (let i = 0; i < 5; i++) {
+    setTimeout(createBalloon, i * 100);
 }
 
 // Video Modal Functionality

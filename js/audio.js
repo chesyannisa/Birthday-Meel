@@ -75,25 +75,25 @@ document.addEventListener('DOMContentLoaded', function() {
     playMusic();
     
     // Add event listener for page visibility changes
-    document.addEventListener('visibilitychange', function() {
-        if (document.hidden) {
-            // Page is hidden, pause music
-            bgMusic.pause();
-        } else {
-            // Page is visible again, resume music if it was playing
-            if (isPlaying) {
-                playMusic();
-            }
-        }
-    });
+    // document.addEventListener('visibilitychange', function() {
+    //     if (document.hidden) {
+    //         // Page is hidden, pause music
+    //         bgMusic.pause();
+    //     } else {
+    //         // Page is visible again, resume music if it was playing
+    //         if (isPlaying) {
+    //             playMusic();
+    //         }
+    //     }
+    // });
     
     // Try to play music after a short delay (helps with autoplay policies)
     setTimeout(playMusic, 1000);
     
     // Try to play music on any user interaction
-    document.addEventListener('click', function() {
-        if (!isPlaying) {
-            playMusic();
-        }
-    }, { once: true });
+    // document.addEventListener('click', function() {
+    //     if (!isPlaying) {
+    //         playMusic();
+    //     }
+    // }, { once: true });
 }); 

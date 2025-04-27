@@ -1,45 +1,45 @@
 // Sample gallery data - Replace with your actual images
 const galleryData = [
     {
-        image: 'assets/gallery/Diwali.jpg',
-        caption: 'Sundar & Sushil'
+        image: 'assets/gallery/bdg_terakhir.jpeg',
+        caption: 'Milih outfit ke hutan'
     },
     {
-        image: 'assets/gallery/Bros.jpeg',
-        caption: 'Special moments'
+        image: 'assets/gallery/bdg-terakhir.jpeg',
+        caption: 'Terakhir kita ketemu gasih?'
     },
     {
-        image: 'assets/gallery/Bross.jpeg',
-        caption: 'Kuch Yadein'
+        image: 'assets/gallery/selfie_1.jpeg',
+        caption: 'Siapa nih cakep amat'
     },
     {
-        image: 'assets/gallery/Sunrise.jpeg',
-        caption: 'Ur_first_Sunrise'
+        image: 'assets/gallery/sekolah.jpeg',
+        caption: 'Terakhir ke asipa ya ges'
     },
     {
-        image: 'assets/gallery/Me_Her.jpg',
-        caption: 'Diwali'
+        image: 'assets/gallery/fotostudio_1.jpeg',
+        caption: 'Pinkyyyy'
     },
     {
-        image: 'assets/gallery/GT_Bros.jpeg',
-        caption: 'GT with Bros'
+        image: 'assets/gallery/fotostudio_2.jpeg',
+        caption: 'Nyasar ke bandung mana gatau'
     },
     {
-        image: 'assets/gallery/besties.jpeg',
-        caption: 'Besties'
+        image: 'assets/gallery/boneka.jpeg',
+        caption: 'ihiyyy gemashhhh'
     },
     {
-        image: 'assets/gallery/Aiman_Room.jpeg',
-        caption: 'Hall_Days'
+        image: 'assets/gallery/wisuda.jpeg',
+        caption: 'Gutbay asipa'
     },
-    {
-        image: 'assets/gallery/Independence_Day.jpeg',
-        caption: 'JVM'
-    },
-    {
-        image: 'assets/gallery/Smiling.jpeg',
-        caption: 'Lastly_You'
-    },
+    // {
+    //     image: 'assets/gallery/Independence_Day.jpeg',
+    //     caption: 'JVM'
+    // },
+    // {
+    //     image: 'assets/gallery/Smiling.jpeg',
+    //     caption: 'Lastly_You'
+    // },
     // Add more images as needed
 ];
 
